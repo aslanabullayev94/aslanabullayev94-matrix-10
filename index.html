@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Pitch.io Dashboard</title>
+</head>
+
+<body>
+    <section id="page">
+        <!---------------------------------- header ------------------------------>
+        <header>
+            <!-- logo of the website -->
+            <div class="header_logo">
+                <a href="#"><i class="fab fa-pinterest-p fa-2x"></i>Pitch.io</a>
+            </div>
+            <!-- other header items -->
+            <div class="header_others">
+                <div class="dashboard_date">
+                    <p>Dashboard</p>
+                    <div class="date">
+                        <span>Monday</span>
+                        <span>02 March 2020</span>
+                    </div>
+                </div>
+                <div class="my_account">
+                    <div class="notifications">
+                        <!--Message Icon-->
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                        <!--Bell Icon-->
+                        <a href="#"><i class="far fa-bell"></i></a>
+                    </div>
+                    <div class="profile">
+                        <span>AA</span>
+                        <!--Arrow Icon-->
+                        <a href="#"><span>Aslan Abdullayev
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <!------------------------------ sidebar ------------------------------>
+            <div class="sidebar">
+                <div class="shortcut_element new_pitch">
+                    <!-- plus icon -->
+                    <button class="pitch_btn">
+                        <span class="btn-name">Create New</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <div class="shortcut_element dashboard">
+                    <!-- dashboard icon -->
+                    <button>
+                        <span class="material-icons">dashboard</span>
+                        <span class="btn-name">Dashboard</span>
+                    </button>
+                </div>
+                <div class="shortcut_element editor">
+                    <!-- editor icon -->
+                    <button>
+                        <i class="far fa-edit"></i>
+                        <span class="btn-name">Editor</span>
+                    </button>
+                </div>
+                <div class="shortcut_element leads">
+                    <!-- leads icon -->
+                    <button>
+                        <span class="material-icons">groups</span>
+                        <span class="btn-name">Leads</span>
+                    </button>
+                </div>
+                <div class="shortcut_element settings">
+                    <!-- settings icon -->
+                    <button>
+                        <span class="material-icons">settings</span>
+                        <span class="btn-name">Settings</span>
+                    </button>
+                </div>
+                <div class="shortcut_element preview">
+                    <!-- search icon -->
+                    <button>
+                        <span class="material-icons">manage_search</span>
+                        <span class="btn-name">Search</span>
+                    </button>
+                </div>
+            </div>
+            <!------------------------------ content ------------------------------>
+            <div class="content-wrapper">
+                <!-- user greeting panel -->
+                <div class="user-greeting-panel">
+                    <div class="panel-body">
+                        <h1 class="panel-title">Hi, Aslan</h1>
+                        <p>Ready to start your day with some pitch decks?</p>
+                    </div>
+                    <div class="panel-img"></div>
+                </div>
+                <!-- overview cards -->
+                <div class="overview">
+                    <div class="overview-item">
+                        <div class="ov-item-content">
+                            <div class="content-icon">
+                                <!-- graph icon -->
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="content-body">
+                                <h4>83%</h4>
+                                <span>Open Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-item">
+                        <div class="ov-item-content">
+                            <!-- check icon -->
+                            <div class="content-icon">
+                                <i class="far fa-check-circle"></i>
+                            </div>
+                            <div class="content-body">
+                                <h4>77%</h4>
+                                <span>Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-item">
+                        <div class="ov-item-content">
+                            <!-- star icon -->
+                            <div class="content-icon">
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="content-body">
+                                <h4>91</h4>
+                                <span>Unique Views</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-item">
+                        <div class="ov-item-content">
+                            <!-- view icon -->
+                            <div class="content-icon">
+                                <i class="far fa-eye"></i>
+                            </div>
+                            <div class="content-body">
+                                <h4>126</h4>
+                                <span>Total Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-pitches"></div>
+                
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+
+#page {
+  width: 90%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 5px -5px gray;
+          box-shadow: 0 4px 5px -5px gray;
+}
+
+header .header_logo {
+  width: 20%;
+}
+
+header .header_logo a {
+  color: #141317;
+  font-size: 20px;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+          column-gap: 7px;
+}
+
+header .header_logo a i {
+  background-color: blue;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50px;
+}
+
+header .header_others {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header_others .dashboard_date p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header .header_others .dashboard_date .date {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+header .header_others .dashboard_date .date span:nth-child(1) {
+  color: blue;
+}
+
+header .header_others .dashboard_date .date span:nth-child(2) {
+  color: gray;
+}
+
+header .header_others .my_account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+}
+
+header .header_others .my_account .notifications a {
+  color: gray;
+  font-size: 24px;
+}
+
+header .header_others .my_account .notifications a i {
+  padding: 0 15px;
+}
+
+header .header_others .my_account .profile {
+  font-weight: 700;
+}
+
+header .header_others .my_account .profile > span {
+  padding: 12px 7px;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+  color: blue;
+}
+
+header .header_others .my_account .profile a {
+  padding: 0 5px;
+  color: #141317;
+}
+
+header .header_others .my_account .profile a i {
+  margin: 0 5px;
+}
+
+.main {
+  margin-top: 60px;
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .sidebar {
+  height: 100vh;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .sidebar .shortcut_element {
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+.main .sidebar .shortcut_element button {
+  display: block;
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 700;
+  color: #141317;
+  font-size: 15px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.main .sidebar .shortcut_element button.pitch_btn {
+  background-color: #d4d4d4;
+  text-align: center;
+}
+
+.main .sidebar .shortcut_element button.pitch_btn i {
+  color: white;
+  background-color: blue;
+  padding: 8px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.main .sidebar .shortcut_element button i,
+.main .sidebar .shortcut_element button span:not(.btn-name) {
+  margin: 0 15px;
+  padding: 5px;
+  border-radius: 7px;
+  vertical-align: bottom;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.main .sidebar .shortcut_element button:hover:not(.pitch_btn) {
+  background-color: #d4d4d4;
+}
+
+.main .sidebar .shortcut_element button:hover:not(.pitch_btn) i,
+.main .sidebar .shortcut_element button:hover:not(.pitch_btn) span:not(.btn-name) {
+  color: white;
+  background-color: blue;
+}
+
+.main .content-wrapper {
+  width: 80%;
+}
+
+.main .content-wrapper .user-greeting-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d4d4d4;
+  border-radius: 15px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.main .content-wrapper .user-greeting-panel .panel-body {
+  width: 60%;
+  padding: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .content-wrapper .user-greeting-panel .panel-body .panel-title {
+  margin: 15px 0;
+  font-size: 48px;
+}
+
+.main .content-wrapper .user-greeting-panel .panel-img {
+  height: 200px;
+  width: 40%;
+  background: url("images/image_processing20201008-28716-1ltt5yv.png");
+  background-color: #d4d4d4;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (max-width: 576px) {
+  header {
+    width: 90%;
+    padding: 30px 0 20px 0;
+  }
+  header .header_logo {
+    width: 30%;
+  }
+  header .header_others {
+    width: 70%;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  header .header_others .dashboard_date {
+    display: none;
+  }
+  header .header_others .my_account {
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  header .header_others .my_account .notifications {
+    display: none;
+  }
+  header .header_others .my_account .profile span {
+    padding: 10px 15px;
+  }
+  header .header_others .my_account .profile a {
+    display: none;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .sidebar {
+    width: 100%;
+    max-height: 100px !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: scroll;
+  }
+  .main .sidebar .shortcut_element {
+    margin: 0 5px;
+  }
+  .main .sidebar .shortcut_element button {
+    width: 100px !important;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: #d4d4d4;
+  }
+  .main .sidebar .shortcut_element button i,
+  .main .sidebar .shortcut_element button span:not(.btn-name) {
+    color: white;
+    background-color: blue;
+  }
+  .main .content-wrapper {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .main .content-wrapper .user-greeting-panel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 350px;
+  }
+  .main .content-wrapper .user-greeting-panel .panel-img {
+    width: 100%;
+    height: 160px;
+    background-position: center;
+  }
+  .main .content-wrapper .user-greeting-panel .panel-body {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    height: 190px;
+  }
+  .main .content-wrapper .user-greeting-panel .panel-body .panel-title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .main .content-wrapper .overview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
